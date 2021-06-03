@@ -2,7 +2,7 @@ import React from "react";
 import "./Saat.css";
 
 function Saat() {
-  const tarih = new Date("June 03, 2021 18:24:00");
+  const tarih = new Date();
   const saatString = tarih.toLocaleTimeString();
   const tarihString = tarih.toLocaleDateString();
   const suAnkiSaat = tarih.getHours();
