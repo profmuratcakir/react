@@ -1,0 +1,9 @@
+body {
+  background-color: #eee;
+  text-align: center;
+}
+.container-yorum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
