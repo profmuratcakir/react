@@ -24,7 +24,6 @@ function Events() {
   // TODO: 1.Yontem Statefull Nesneler kullanmak. Yani state'ler ile degisimi gostermek. (KARMAŞIK)
   // ! 2. Yontem Hooks adi verilen fonksiyonel yaklasimi kullanmak.
 
-  
   function handleDegistir() {
     baslik = "EVENTS";
     console.log(baslik);
