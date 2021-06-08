@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
+
+/* Değişkenlerin tanımlanması */
+:root {
+  /* Asıl renklerin koyu tonları */
+  --mavi-1: hsl(205, 86%, 17%);
+  --mavi-2: hsl(205, 77%, 27%);
+  --mavi-3: hsl(205, 72%, 37%);
+  --mavi-4: hsl(205, 63%, 48%);
+  --mavi-5: hsl(205, 78%, 60%);
+
+  /* asıl renklerin açık tonları */
+  --mavi-6: hsl(205, 89%, 70%);
+  --mavi-7: hsl(205, 90%, 76%);
+  --mavi-8: hsl(205, 86%, 81%);
+  --mavi-9: hsl(205, 90%, 88%);
+  --mavi-10: hsl(205, 100%, 96%);
+
+  /* Başlıklar için kullanılan koyu tonlar */
+  --gri-1: hsl(209, 61%, 16%);
+  --gri-2: hsl(211, 39%, 23%);
+  --gri-3: hsl(209, 34%, 30%);
+  --gri-4: hsl(209, 28%, 39%);
+
+  /* Paragraflar için kullanılılan renkler */
+  --gri-5: hsl(210, 22%, 49%);
+  --gri-6: hsl(209, 23%, 60%);
+  --gri-7: hsl(211, 27%, 70%);
+  --gri-8: hsl(210, 31%, 80%);
+  --gri-9: hsl(212, 33%, 89%);
+  --gri-10: hsl(210, 36%, 96%);
+  --acik-beyaz: #fff;
+  --koyu-kirmizi: hsl(360, 67%, 44%);
+  --acik-kirmizi: hsl(360, 71%, 66%);
+  --koyu-yesil: hsl(125, 67%, 44%);
+  --acik-yesil: hsl(125, 71%, 66%);
+  --acik-pembe: #f28ab2;
+  --siyah: #222;
+  --koyu-golge: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  --acik-golge: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  --ff-roboto: "Roboto", sans-serif;
+  --ff-opensans: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --bosluk: 0.1rem;
+  --radius: 0.25rem;
+  --max-width: 1170px;
+  --fixed-width: 450px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-opensans);
+  background: var(--mavi-9);
+  color: var(--gri-1);
+  font-size: 15px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 15px;
+  color: var(--mavi-3);
+}
+
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 50px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+}
+
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90vw;
+  margin: 5rem 0;
+  max-width: var(--fixed-width);
+  background: var(--acik-beyaz);
+  border-radius: var(--radius);
+  padding: 1.5rem 2rem;
+  box-shadow: var(--koyu-golge);
+}
+.container h3 {
+  font-weight: normal;
+  text-transform: none;
+  margin-bottom: 2rem;
+}
+.kisi {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+.kisi img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--acik-golge);
+}
+.kisi h4 {
+  margin-bottom: 0.35rem;
+}
+.kisi p {
+  margin-bottom: 0;
+}
+.container button {
+  color: var(--acik-beyaz);
+  display: block;
+  width: 100%;
+  border-color: transparent;
+  background: var(--mavi-6);
+  margin: 2rem auto 0 auto;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+  letter-spacing: var(--bosluk);
+  border-radius: var(--radius);
+  /* outline: 1px solid rgba(111, 113, 228, 0.8); */
+  cursor: pointer;
+}
