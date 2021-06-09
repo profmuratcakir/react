@@ -1,0 +1,2 @@
+Bu bir txt dosyasidir.
+Bu dosyayi fetch ile alabiliriz
