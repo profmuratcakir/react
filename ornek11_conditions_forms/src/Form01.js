@@ -7,7 +7,6 @@ function Form01() {
   const [mesaj, setMesaj] = useState("");
 
   function adGuncelle(event) {
-    // console.log(event.target.value);
     setAd(event.target.value);
   }
   function soyadGuncelle(event) {
